@@ -14,9 +14,7 @@ output:
     toc_depth: 4
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+
 
 # 1.0	Introduction 
 
@@ -60,6 +58,19 @@ Select **Open Attribute Table** from the context menu.
 
 The Attribute table dialog window of Primary Schools appears.hello test
 
+```{r echo = FALSE, layout="l-body-outset"}
+library(knitr)
 
-
+emp.data <- data.frame(
+   DataSource = c ("Indonesia Geospatial", "Indonesia Geospatial","Indonesia Geospatial","Indonesia Geospatial", "Indonesia Geospatial","Indonesia Geospatial","Indonesia Geospatial", "Indonesia Geospatial","Indonesia Geospatial"), 
+   DataFormat = c("Shape files","Shape files","Shape files","Shape files","Shape files","Shape files","Shape files","Shape files","TIF files"),
+   Description = c("OSM Buildings", "PENAJAM PASER UTARA","KUTAI KARTANEGARA", "KOTA SAMARINDA", "KOTA BALIKPAPAN","Titik Api Hotspot se-Indonesia Tahun 2014 - 2019",  "Geology Kalimantan Timur","East BATAS DESA DESEMBER 2019 DUKCAPIL KALIMANTAN TIMUR (Villiage boundary and population data for East Kalimantan 2019)", "30. Provinsi Kalimantan Timur"), 
+   
+   Link = c("https://www.indonesia-geospasial.com/2020/12/download-shp-pemukiman-detail-seluruh.html","https://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html","https://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html","https://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html","https://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html","https://www.indonesia-geospasial.com/2020/04/shapefile-shp-titik-api-hotspot.html
+","https://www.indonesia-geospasial.com/2020/03/download-data-shapefile-shp-geologi-se.html
+","https://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html","https://www.indonesia-geospasial.com/2020/01/download-dem-srtm-30-meter-se-indonesia.html"),
+   stringsAsFactors = FALSE
+)
+kable(emp.data)
+```
 
